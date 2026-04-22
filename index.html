@@ -1,60 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>The Quiet Crossroads</title>
 
-  <!-- Harlowe 3.3.9 (embedded) -->
+  <!-- Tell Harlowe where the Start passage is -->
   <script>
-  window.storyFormat = {
-    "format": "Harlowe",
-    "format-version": "3.3.9",
-    "start": "Start"
-  };
+    window.storyFormat = { format: "Harlowe", "format-version": "3.3.9", start: "Start" };
   </script>
+
+  <!-- Load the Harlowe runtime (THIS is what was broken before) -->
   https://cdn.jsdelivr.net/npm/twine-harlowe@3.3.9/dist/harlowe.min.jsscript>
 </head>
 
 <body>
 
-<tw-storydata name="The Quiet Crossroads" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.9">
+  <!-- Twine story data -->
+  <tw-storydata
+    name="The Quiet Crossroads"
+    startnode="1"
+    creator="Twine"
+    creator-version="2.8.1"
+    format="Harlowe"
+    format-version="3.3.9">
 
-<tw-passagedata pid="1" name="Start">
+    <tw-passagedata pid="1" name="Start">
 (img: "forest.png")
 
 You stand at a quiet crossroads in the forest. The wind is still, and the path ahead is uncertain.
 
-[[Take the left path->Left Path]]
-[[Take the right path->Right Path]]
-</tw-passagedata>
+[[Take the left path-&gt;Left Path]]
+[[Take the right path-&gt;Right Path]]
+    </tw-passagedata>
 
-  <tw-passagedata pid="2" name="Left Path">
+    <tw-passagedata pid="2" name="Left Path">
 The left path leads deeper into the forest. The trees feel older here.
 
-[[Go back to the crossroads->Start]]
-[[Continue forward->Cabin]]
-  </tw-passagedata>
+[[Go back to the crossroads-&gt;Start]]
+[[Continue forward-&gt;Cabin]]
+    </tw-passagedata>
 
-  <tw-passagedata pid="3" name="Right Path">
+    <tw-passagedata pid="3" name="Right Path">
 The right path opens into a sunny clearing. You feel at ease.
 
-[[Return to the crossroads->Start]]
-[[Rest here->Ending]]
-  </tw-passagedata>
+[[Return to the crossroads-&gt;Start]]
+[[Rest here-&gt;Ending]]
+    </tw-passagedata>
 
-  <tw-passagedata pid="4" name="Cabin">
+    <tw-passagedata pid="4" name="Cabin">
 You discover a small wooden cabin. Smoke curls from the chimney.
 
-[[Knock on the door->Ending]]
-  </tw-passagedata>
+[[Knock on the door-&gt;Ending]]
+    </tw-passagedata>
 
-  <tw-passagedata pid="5" name="Ending">
+    <tw-passagedata pid="5" name="Ending">
 Your journey pauses here, but the story will continue another day.
 
 ''THE END''
-  </tw-passagedata>
+    </tw-passagedata>
 
-</tw-storydata>
+  </tw-storydata>
 
 </body>
 </html>
