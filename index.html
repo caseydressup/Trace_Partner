@@ -22,6 +22,7 @@ It&#39;s gratifying, but nothing you’re doing today makes tomorrow easier. You
 
 [[Keep delivering-&gt;Doing]]
 [[Look Under the Hood-&gt;Look Under the Hood]]
+[[Sprint Ahead-&gt;Improve it]]
 
 ---</tw-passagedata><tw-passagedata pid="3" name="Build a Better Way" tags="" position="1975,175" size="100,100">At first it’s a shortcut.
 
@@ -33,7 +34,8 @@ Then someone else asks for it.
 That’s when you realize: if this works, people will depend on it.
 
 [[Make it real-&gt;Temptation]]
-[[That&#39;s OK... it&#39;s really not my field-&gt;Doing]] 
+[[That&#39;s OK... it&#39;s really not my field-&gt;Doing]]
+[[Sprint Ahead-&gt;Tool Success]]
 </tw-passagedata><tw-passagedata pid="4" name="Improve It" tags="" position="1825,25" size="100,100">There are two ways this goes.
 
 In one, you work by engaging people — conversations, consensus, patience.
@@ -44,8 +46,9 @@ Today, you don’t get to do both.
 
 [[Work through people-&gt;Consensus Builder]]
 [[Make something that you can think you can use-&gt;Build a Better Way]]
+[[Sprint Ahead-&gt;Tool Success]]
 
----</tw-passagedata><tw-passagedata pid="5" name="Fun" tags="" position="1675,25" size="100,100">You keep circling the same friction points.
+</tw-passagedata><tw-passagedata pid="5" name="Fun" tags="" position="1675,25" size="100,100">You keep circling the same friction points.
 
 Different projects. Same tasks.
 
@@ -59,7 +62,9 @@ You begin offloading it into structures—spreadsheets, templates, checklists—
 
 You know you need something that holds this all together.
 
-[[Let&#39;s do this!-&gt;Improve It]] </tw-passagedata><tw-passagedata pid="6" name="Temptation" tags="" position="2100,275" size="100,100">A tool is expensive to build.
+[[Let&#39;s do this!-&gt;Improve It]]
+[[Sprint Ahead-&gt;Tool Success]]
+</tw-passagedata><tw-passagedata pid="6" name="Temptation" tags="" position="2100,275" size="100,100">A tool is expensive to build.
 
 You have utilization targets to meet. 
 
@@ -72,7 +77,8 @@ You can just keep on doing things the way you always have... nobody is going to 
 Or you can take a swing at it, accept risk, and learn.
 
 [[Build a tool-&gt;Build Tools]]
-[[I prefer to keep stuff moving out the door-&gt;Doing]]</tw-passagedata><tw-passagedata pid="7" name="Consensus Builder" tags="" position="2050,25" size="100,100">(set: $consensus to 0)
+[[I prefer to keep stuff moving out the door-&gt;Doing]]
+[[Sprint Ahead-&gt;Tool Success]]</tw-passagedata><tw-passagedata pid="7" name="Consensus Builder" tags="" position="2050,25" size="100,100">(set: $consensus to 0)
 (set: $consRunway to 3)
 (set: $consCapFail to false)
 
@@ -117,7 +123,8 @@ Consensus runway remaining: (print: $consRunway)
 ]
 
 [[Build more consensus-&gt;Build Consensus]]
-[[Commit and implement-&gt;Consensus Roll]]</tw-passagedata><tw-passagedata pid="9" name="Consensus Roll" tags="" position="2575,25" size="100,100">You decide it’s time.
+[[Commit and implement-&gt;Consensus Roll]]
+[[Sprint Ahead-&gt;Consensus Success]]</tw-passagedata><tw-passagedata pid="9" name="Consensus Roll" tags="" position="2575,25" size="100,100">You decide it’s time.
 
 The process is sound. The logic holds.
 
@@ -131,12 +138,14 @@ But adoption is never guaranteed.
 
   (if: $consRoll &lt;= $consChance)[
     [[Proceed-&gt;Consensus Success]]
+    [[Sprint Ahead-&gt;Consensus Success]]
   ]
   (else:)[
     (if: $consChance is 80)[
       (set: $consCapFail to true)
     ]
     [[Proceed-&gt;Consensus Failure]]
+    [[Sprint Ahead-&gt;Consensus Success]]
   ]
 ]</tw-passagedata><tw-passagedata pid="10" name="Consensus Success" tags="" position="2725,75" size="100,100">It works.
 
@@ -148,7 +157,8 @@ You realize success didn’t come from unanimity.
 
 It came from enough people being willing to stand behind the decision.
 
-[[Continue onward-&gt;Elevator Lobby]]</tw-passagedata><tw-passagedata pid="11" name="Consensus Failure" tags="" position="2375,150" size="100,100">
+[[Continue onward-&gt;Elevator Lobby]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="11" name="Consensus Failure" tags="" position="2375,150" size="100,100">
 The process is sound.
 
 But adoption stalls.
@@ -165,7 +175,8 @@ It just… doesn’t take.
   Next time, you’ll know where the real resistance lives.
 ]
 
-[[Return to the meeting room-&gt;Consensus Builder]]</tw-passagedata><tw-passagedata pid="12" name="Build Tools" tags="" position="2275,275" size="100,100">(set: $tool to 0)
+[[Return to the meeting room-&gt;Consensus Builder]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="12" name="Build Tools" tags="" position="2275,275" size="100,100">(set: $tool to 0)
 (set: $toolRunway to 3)
 (set: $toolCapFail to false)
 
@@ -213,7 +224,8 @@ Tool runway remaining: (print: $toolRunway)
 ]
 
 [[Refine one more time-&gt;Build Tool]]
-[[Commit and implement-&gt;Tool Roll]]</tw-passagedata><tw-passagedata pid="14" name="Tool Roll" tags="" position="2575,250" size="100,100">You ship it.
+[[Commit and implement-&gt;Tool Roll]]
+[[Sprint Ahead-&gt;Tool Success]]</tw-passagedata><tw-passagedata pid="14" name="Tool Roll" tags="" position="2575,250" size="100,100">You ship it.
 
 The tool is now real.
 
@@ -233,6 +245,7 @@ People will rely on it. You will rely on it.
       (set: $toolCapFail to true)
     ]
     [[Proceed-&gt;Tool Failure]]
+    [[Sprint Ahead-&gt;Tool Success]]
   ]
 ]</tw-passagedata><tw-passagedata pid="15" name="Tool Success" tags="" position="2700,250" size="100,100">It holds.
 
@@ -242,7 +255,8 @@ The boring parts shrink. The important parts become visible.
 
 You feel the quiet satisfaction of something that will still work tomorrow.
 
-[[Continue onward-&gt;Elevator Lobby]]</tw-passagedata><tw-passagedata pid="16" name="Tool Failure" tags="" position="2500,475" size="100,100">It almost works.
+[[Continue onward-&gt;Elevator Lobby]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="16" name="Tool Failure" tags="" position="2500,475" size="100,100">It almost works.
 
 Then an edge case appears. A dependency you didn’t realize you created until it broke.
 
@@ -256,7 +270,8 @@ It fails in a way that steals time and confidence.
   Next time, you won’t be surprised by this.
 ]
 
-[[Go back and refine-&gt;Build Tool]]</tw-passagedata><tw-passagedata pid="17" name="Elevator Lobby" tags="" position="2975,50" size="100,100">You arrive at a place in the building you&#39;ve had your eye on since you arrived.
+[[Go back and refine-&gt;Build Tool]]
+[[Sprint Ahead-&gt;Tool Success]]</tw-passagedata><tw-passagedata pid="17" name="Elevator Lobby" tags="" position="2975,50" size="100,100">You arrive at a place in the building you&#39;ve had your eye on since you arrived.
 
 The elevator doors are here—brushed metal, shining nickel buttons, a directory that lists floors you’ve never visited.
 
@@ -267,7 +282,8 @@ It isn’t prestige.
 It’s responsibility that lasts.
 
 [[Step into the elevator-&gt;Ground Floor]]
-[[Go back and explore another track-&gt;Improve It]]</tw-passagedata><tw-passagedata pid="18" name="Ground Floor" tags="" position="3125,50" size="100,100">The elevator doors glide open with a soft sigh.
+[[Go back and explore another track-&gt;Improve It]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="18" name="Ground Floor" tags="" position="3125,50" size="100,100">The elevator doors glide open with a soft sigh.
 
 You step inside alone.
 
@@ -277,7 +293,8 @@ You stare at the buttons.
 
 [[Parkade-&gt;Parkade]]
 [[Second foor -&gt;Second Floor]]
-[[Top button -&gt;Upper Floors]]</tw-passagedata><tw-passagedata pid="19" name="Parkade" tags="" position="3350,50" size="100,100">The doors open into a dimly lit parkade. A quiet mechanical whir permeates the concrete space. 
+[[Top button -&gt;Upper Floors]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="19" name="Parkade" tags="" position="3350,50" size="100,100">The doors open into a dimly lit parkade. A quiet mechanical whir permeates the concrete space. 
 
 You glimpse a different life: Slinging drinks at the pub. Working as the oldest liftie at Marmot Basin. Driving an Uber. 
 
@@ -291,7 +308,8 @@ Then you notice what’s missing.
 
 Adventure.
 
-[[Step back into the elevator-&gt;Ground Floor]]</tw-passagedata><tw-passagedata pid="20" name="Second Floor" tags="" position="2975,175" size="100,100">This floor smells like fresh printouts and strong coffee.
+[[Step back into the elevator-&gt;Ground Floor]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="20" name="Second Floor" tags="" position="2975,175" size="100,100">This floor smells like fresh printouts and strong coffee.
 
 Projects move quickly here. Problems are well-defined. Success is visible and frequent.
 
@@ -305,7 +323,8 @@ You also notice how often the same problems return, slightly reshaped, asking to
 
 The doors close gently, without judgment.
 
-[[Step back into the elevator-&gt;Ground Floor]]</tw-passagedata><tw-passagedata pid="21" name="Upper Floors" tags="" position="3250,175" size="100,100">The top button is unmarked. It&#39;s so high up on the panel you need to stretch to reach it.
+[[Step back into the elevator-&gt;Ground Floor]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="21" name="Upper Floors" tags="" position="3250,175" size="100,100">The top button is unmarked. It&#39;s so high up on the panel you need to stretch to reach it.
 
 No descriptions. No promises.
 
@@ -321,7 +340,8 @@ The elevator waits.
 
 [[Sure you want to press it?-&gt;The Choice]]
 [[Parkade-&gt;Parkade]]
-[[Second foor -&gt;Second Floor]]</tw-passagedata><tw-passagedata pid="22" name="The Choice" tags="" position="3425,200" size="100,100">The elevator stops.
+[[Second foor -&gt;Second Floor]]
+[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="22" name="The Choice" tags="" position="3425,200" size="100,100">The elevator stops.
 
 There’s no chime this time—just the quiet sound of doors sliding apart.
 
@@ -402,7 +422,8 @@ You feel aligned.
 </tw-passagedata><tw-passagedata pid="28" name="Doing" tags="" position="1625,350" size="100,100">New day, new task. Emails come and go. Tap-tap-tap. Tap-tap-tap.
 
 [[Keep on working-&gt;Get Stuff Done]] 
-[[I&#39;m seeing a pattern here-&gt;Look Under the Hood]] </tw-passagedata><tw-passagedata pid="29" name="Intro" tags="" position="25,0" size="100,100">&quot;//Life&#39;s been good to me so far....//&quot;
+[[I&#39;m seeing a pattern here-&gt;Look Under the Hood]] 
+[[Sprint Ahead-&gt;Improve It]]</tw-passagedata><tw-passagedata pid="29" name="Intro" tags="" position="25,0" size="100,100">&quot;//Life&#39;s been good to me so far....//&quot;
 - Joe Walsh, 1978, probably somewhere in California
 
 
@@ -420,6 +441,8 @@ You feel aligned.
 
 
 [[Click Here to Play the Game of Life-&gt;Splash]]
+
+Instructions - choose one of the blue text options to progress through the game.
 </tw-passagedata><tw-passagedata pid="30" name="Teens" tags="" position="250,0" size="100,100">Grade 12. Almost done. 
 
 Things are going pretty well. You&#39;re a bit of a dork but that&#39;s OK... your friends are dorks too. Your parents are quite religious and some of that stuck but you started asking them tough questions a few years ago and their answers have become less and less convincing. You do well in school, you play soccer and football (when the coach actually lets you play), and graduation is right around the corner. Then the news comes...
