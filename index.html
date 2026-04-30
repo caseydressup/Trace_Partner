@@ -10,7 +10,7 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Game of Life.</tw-noscript></noscript></tw-story>
 <tw-storydata name="The Game of Life" startnode="29" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="f38332c8-d0d3-47e4-a322-b531b5c44c93" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Splash" tags="" position="150,0" size="100,100">
-&lt;img src=&quot;Splash.png&quot; class=&quot;passage-art&quot; alt=&quot;Splash image&quot;&gt;
+img src="Splash.png"
 
 
 [[Continue-&gt;Teens]]
@@ -87,9 +87,7 @@ Consensus is not a switch.
 
 It is a process.
 
-[[Start building consensus-&gt;Build Consensus]]</tw-passagedata><tw-passagedata pid="8" name="Build Consensus" tags="" position="2375,25" size="100,100">&lt;img class=&quot;passage-art&quot; src=&quot;images/Build Consensus.png&quot; alt=&quot;Build Consensus&quot;&gt;
-
-(if: $consRunway &gt; 0)[
+[[Start building consensus-&gt;Build Consensus]]</tw-passagedata><tw-passagedata pid="8" name="Build Consensus" tags="" position="2375,25" size="100,100">(if: $consRunway &gt; 0)[
   (set: $consRunway to $consRunway - 1)
 ]
 
@@ -120,9 +118,7 @@ Consensus runway remaining: (print: $consRunway)
 ]
 
 [[Build more consensus-&gt;Build Consensus]]
-[[Commit and implement-&gt;Consensus Roll]]</tw-passagedata><tw-passagedata pid="9" name="Consensus Roll" tags="" position="2575,25" size="100,100">&lt;img class=&quot;passage-art&quot; src=&quot;images/Consensus Roll.png&quot; alt=&quot;Consensus Roll&quot;&gt;
-
-You decide it’s time.
+[[Commit and implement-&gt;Consensus Roll]]</tw-passagedata><tw-passagedata pid="9" name="Consensus Roll" tags="" position="2575,25" size="100,100">You decide it’s time.
 
 The process is sound. The logic holds.
 
@@ -143,9 +139,7 @@ But adoption is never guaranteed.
     ]
     [[Proceed-&gt;Consensus Failure]]
   ]
-]</tw-passagedata><tw-passagedata pid="10" name="Consensus Success" tags="" position="2725,75" size="100,100">&lt;img class=&quot;passage-art&quot; src=&quot;images/Consensus Success.png&quot; alt=&quot;Consensus Success&quot;&gt;
-
-It works.
+]</tw-passagedata><tw-passagedata pid="10" name="Consensus Success" tags="" position="2725,75" size="100,100">It works.
 
 Not perfectly—but well enough.
 
@@ -155,8 +149,7 @@ You realize success didn’t come from unanimity.
 
 It came from enough people being willing to stand behind the decision.
 
-[[Continue onward-&gt;Elevator Lobby]]</tw-passagedata><tw-passagedata pid="11" name="Consensus Failure" tags="" position="2375,150" size="100,100">&lt;img class=&quot;passage-art&quot; src=&quot;images/Consensus Failure.png&quot; alt=&quot;Consensus Failure&quot;&gt;
-
+[[Continue onward-&gt;Elevator Lobby]]</tw-passagedata><tw-passagedata pid="11" name="Consensus Failure" tags="" position="2375,150" size="100,100">
 The process is sound.
 
 But adoption stalls.
@@ -221,9 +214,7 @@ Tool runway remaining: (print: $toolRunway)
 ]
 
 [[Refine one more time-&gt;Build Tool]]
-[[Commit and implement-&gt;Tool Roll]]</tw-passagedata><tw-passagedata pid="14" name="Tool Roll" tags="" position="2575,250" size="100,100">&lt;img class=&quot;passage-art&quot; src=&quot;images/Tool Roll.png&quot; alt=&quot;Tool Roll&quot;&gt;
-
-You ship it.
+[[Commit and implement-&gt;Tool Roll]]</tw-passagedata><tw-passagedata pid="14" name="Tool Roll" tags="" position="2575,250" size="100,100">You ship it.
 
 The tool is now real.
 
@@ -252,9 +243,7 @@ The boring parts shrink. The important parts become visible.
 
 You feel the quiet satisfaction of something that will still work tomorrow.
 
-[[Continue onward-&gt;Elevator Lobby]]</tw-passagedata><tw-passagedata pid="16" name="Tool Failure" tags="" position="2500,475" size="100,100">&lt;img class=&quot;passage-art&quot; src=&quot;images/Tool Failure.png&quot; alt=&quot;Tool Failure&quot;&gt;
-
-It almost works.
+[[Continue onward-&gt;Elevator Lobby]]</tw-passagedata><tw-passagedata pid="16" name="Tool Failure" tags="" position="2500,475" size="100,100">It almost works.
 
 Then an edge case appears. A dependency you didn’t realize you created until it broke.
 
@@ -737,7 +726,7 @@ Maybe there&#39;s a better way to do this?
 
 [[I&#39;m not really a &#39;change&#39; kind of person-&gt;Get Stuff Done]] 
 [[Reflect on this-&gt;Process]]
-</tw-passagedata><tw-passagedata pid="68" name="Hired" tags="" position="1300,250" size="100,100">Congratulations! You land a job... back in Edmonton! 
+</tw-passagedata><tw-passagedata pid="68" name="Hired" tags="" position="1300,250" size="100,100">img src="Homer.gif" Congratulations! You land a job... back in Edmonton! 
 
 You&#39;re certainly not the youngest but you don&#39;t stand out like you did in school. Thank goodness for grizzled engineers.
 
@@ -750,7 +739,7 @@ You find your way back to a pub you used to work at. The ownership has changed b
 Sometimes it doesn&#39;t work out they way you think it will.
 
 [[End-&gt;SadEnd]]
-[[Wait! This isn&#39;t the end of the story I was looking for!-&gt;WorkRoll]]</tw-passagedata><tw-passagedata pid="70" name="End" tags="" position="2925,475" size="100,100"><p style="font-size: 24px;">Thank You.</p> 
+[[Wait! This isn&#39;t the end of the story I was looking for!-&gt;WorkRoll]]</tw-passagedata><tw-passagedata pid="70" name="End" tags="" position="2925,475" size="100,100">Thank You. 
 
 Thank you for playing the Game of Life, and thank you for considering me for Partnership. 
 
