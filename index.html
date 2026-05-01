@@ -13,6 +13,7 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+  font-style: italic;
 }
 </style>
 </head>
@@ -57,6 +58,10 @@ Today, you don’t get to do both.
 [[Make something that you can think you can use-&gt;Build a Better Way]]
 [[Sprint Ahead-&gt;Tool Success]]
 
+<span class="value-text">
+  Ownership mentality, involvement.
+</span>
+  
 </tw-passagedata><tw-passagedata pid="5" name="Fun" tags="" position="1675,25" size="100,100">You keep circling the same friction points.
 
 Different projects. Same tasks.
@@ -73,6 +78,9 @@ You know you need something that holds this all together.
 
 [[Let&#39;s do this!-&gt;Improve It]]
 [[Sprint Ahead-&gt;Tool Success]]
+<span class="value-text">
+  Pursuit of excellence.
+</span>
 </tw-passagedata><tw-passagedata pid="6" name="Temptation" tags="" position="2100,275" size="100,100">A tool is expensive to build.
 
 You have utilization targets to meet. 
@@ -186,11 +194,15 @@ It just… doesn’t take.
 (if: $consChance is 80)[
   You don’t fail the same way twice.
 
-  Next time, you’ll know where the real resistance lives.
+  Next time, you’ll figure out the rub points and make sure you get buy-in.
 ]
 
 [[Return to the meeting room-&gt;Consensus Builder]]
-[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="12" name="Build Tools" tags="" position="2275,275" size="100,100">(set: $tool to 0)
+[[Sprint Ahead-&gt;Doors Open]]
+<span class="value-text">
+  Positivity in the face of adversity.
+</span>
+</tw-passagedata><tw-passagedata pid="12" name="Build Tools" tags="" position="2275,275" size="100,100">(set: $tool to 0)
 (set: $toolRunway to 3)
 (set: $toolCapFail to false)
 
@@ -239,7 +251,12 @@ Tool runway remaining: (print: $toolRunway)
 
 [[Refine one more time-&gt;Build Tool]]
 [[Commit and implement-&gt;Tool Roll]]
-[[Sprint Ahead-&gt;Tool Success]]</tw-passagedata><tw-passagedata pid="14" name="Tool Roll" tags="" position="2575,250" size="100,100">You ship it.
+[[Sprint Ahead-&gt;Tool Success]]
+<span class="value-text">
+  Balance.
+</span>
+
+</tw-passagedata><tw-passagedata pid="14" name="Tool Roll" tags="" position="2575,250" size="100,100">You ship it.
 
 The tool is now real.
 
@@ -263,7 +280,7 @@ People will rely on it. You will rely on it.
   ]
 ]
 <span class="value-text">
-  Excellence is worth pursuing
+  Excellence is worth pursuing.
 </span>
 </tw-passagedata><tw-passagedata pid="15" name="Tool Success" tags="" position="2700,250" size="100,100">It holds.
 
@@ -274,7 +291,13 @@ The boring parts shrink. The important parts become visible.
 You feel the quiet satisfaction of something that will still work tomorrow.
 
 [[Continue onward-&gt;Elevator Lobby]]
-[[Sprint Ahead-&gt;Doors Open]]</tw-passagedata><tw-passagedata pid="16" name="Tool Failure" tags="" position="2500,475" size="100,100">It almost works.
+[[Sprint Ahead-&gt;Doors Open]]
+
+<span class="value-text">
+  Structured, yet flexible.
+</span>
+  
+</tw-passagedata><tw-passagedata pid="16" name="Tool Failure" tags="" position="2500,475" size="100,100">It almost works.
 
 Then an edge case appears. A dependency you didn’t realize you created until it broke.
 
@@ -290,7 +313,9 @@ It fails in a way that steals time and confidence.
 
 [[Go back and refine-&gt;Build Tool]]
 [[Sprint Ahead-&gt;Tool Success]]
-
+<span class="value-text">
+  Pursuit of excellence.
+</span>
   
 </tw-passagedata><tw-passagedata pid="17" name="Elevator Lobby" tags="" position="2975,50" size="100,100">You arrive at a place in the building you&#39;ve had your eye on since you arrived.
 
@@ -469,7 +494,7 @@ Approximate game time:
 10 mins on Sprint; 20 mins at your own pace
 
 <span class="value-text">
-  &quot;Have a great life&quot; is something to aspire for
+  &quot;Having a great life&quot; is something worth pursuing for oneself and others.
 </span>
 </tw-passagedata><tw-passagedata pid="30" name="Teens" tags="" position="250,0" size="100,100">Grade 12. Almost done. 
 
@@ -611,7 +636,7 @@ You push the bike into Mannville and get 36 hours worth of gas for $6.
 [[Sprint Ahead-&gt;Progress]]  
 
 <span class="value-text">
-  Balance - literally anf figuratively
+  Balance - literally and figuratively.
 </span>
   
 </tw-passagedata><tw-passagedata pid="51" name="SFU2" tags="" position="0,250" size="100,100">Yeah... two years in school was enough. You&#39;re sick of being broke all the time and you know you can make a respectable living as a writer. 
@@ -689,7 +714,7 @@ Work is guaranteed money... here now.
 [[I&#39;ll figure it out and learn some Farsi along the way-&gt;UniCF]]
 [[Sprint Ahead-&gt;Uni]]
   <span class="value-text">
-  Driven by Caring
+  Driven by Caring.
 </span>
 
 (set: $skills to 0)
@@ -740,6 +765,10 @@ You are now  (print: $age) years old.
 [[Get to work-&gt;WorkRoll]]
 [[Sprint Ahead-&gt;Hired]]
 
+(if:$skills is 1)
+  [<span class="value-text">
+  Caring, Balance, Health and Safety.
+  </span>]
 
 
 </tw-passagedata><tw-passagedata pid="62" name="UniCF" tags="" position="875,375" size="100,100">The restaurant you were working at goes under. It&#39;s not uncommon. You find a job tending bar at an Irish pub. The tips are good but the hours make it impossible to continue freelance writing, so that tails off. 
