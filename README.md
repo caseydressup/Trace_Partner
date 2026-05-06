@@ -1,5 +1,4 @@
-# The Quiet Crossroads
-
+# The Game of Life
 A small, free, browser-based choose-your-own-adventure story created with Twine (Harlowe format).
 
 ## How to Play
@@ -25,7 +24,7 @@ This project is hosted using GitHub Pages:
 
 ## Files
 - `index.html` — the Twine story
-- `forest.png` — illustration used in the story
+- `xxx.png` — illustrations used in the story
 
 ## License
 Free to use, modify, and share.
